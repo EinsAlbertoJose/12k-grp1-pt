@@ -19,7 +19,7 @@ export class ContactPage {
 
   constructor(public navCtrl: NavController) {}
 
-  Weight(){
+  Compute(){
     
     this.CombHeight = (this.HeightFt*12) + this.HeightIn;
     this.WRob =parseFloat(this.WRob.toFixed(2));

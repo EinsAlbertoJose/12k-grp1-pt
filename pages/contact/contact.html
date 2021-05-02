@@ -34,6 +34,16 @@
     <br/>
     <br/>
 
-    <button ion-button block>Block Button</button>
+    <button ion-button full (click)="Compute()">Compute</button>
+
+    <br/>
+    <br/>
+
+    <ion-item *ngIf="Compute">
+      <p> Robinson (1983): {{WRob}} <code> kg </code> </p>
+      <p> Miller (1983): {{WMil}} <code> kg </code> </p>
+      <p> Hamwi (1964): {{WHam}} <code> kg </code> </p>
+      <p> Devine (1974): {{WDev}} <code> kg </code> </p>
+    </ion-item>
 
 </ion-content>
