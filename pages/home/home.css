@@ -1,15 +1,15 @@
 ion-content{
-  background: rgb(197, 197, 248)
+  background: rgb(220, 220, 241)
 }
 
 h2{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #8a2be2;
+  color: #4542d1;
   text-align:center;
 }
 
 p{
   font-family: Verdana 'Courier New', Courier, monospace;
-  color: black;
+  color: rgb(78, 75, 75);
   text-align: justify;
 }
