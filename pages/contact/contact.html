@@ -39,11 +39,15 @@
     <br/>
     <br/>
 
-    <ion-item *ngIf="CombHeight">
+    <ion-item *ngIf="WRob">
       <p> Robinson (1983): {{WRob}} kg </p>
       <p> Miller   (1983): {{WMil}} kg </p>
       <p> Hamwi    (1964): {{WHam}} kg </p>
       <p> Devine   (1974): {{WDev}} kg </p>
+    </ion-item>
+
+    <ion-item *ngIf="Fmsg">
+      <p> {{Fmsg}}</p>
     </ion-item>
 
 </ion-content>

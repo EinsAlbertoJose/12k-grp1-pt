@@ -19,7 +19,7 @@ export class ContactPage {
   constructor(public navCtrl: NavController) {}
 
   Compute(){
-    this.CombHeight = ((this.HeightFt*12) + this.HeightIn) - 60;
+    this.CombHeight = ((this.HeightFt*12)-60) + this.HeightIn;
     
       if (this.gender == "m") {
         
@@ -29,20 +29,20 @@ export class ContactPage {
           this.WHam = 48.00
           this.WDev = 50.00;
 
-        } else{
-          
-          this.WRob = 52.00 + (this.CombHeight*1.90)
-            this.WRob =parseFloat(this.WRob.toFixed(2));
+
+        } else {
+
+          this.WRob = 52.00 + ((this.HeightFt-5)*12*1.9) + (this.HeightIn*1.9)
+            this.WRob = parseFloat(this.WRob.toFixed(2));
             
-          this.WMil = 56.20 + (this.CombHeight*1.41)
-            this.WMil =parseFloat(this.WMil.toFixed(2));
+          this.WMil = 56.20 + ((this.HeightFt-5)*12*1.41) + (this.HeightIn*1.41)
+            this.WMil = parseFloat(this.WMil.toFixed(2));
 
-          this.WHam = 48.00 + (this.CombHeight*2.70)
-            this.WHam =parseFloat(this.WHam.toFixed(2));
+          this.WHam = 48.00 + ((this.HeightFt-5)*12*2.70) + (this.HeightIn*2.70)
+            this.WHam = parseFloat(this.WHam.toFixed(2));
 
-          this.WDev = 50.00 + (this.CombHeight*2.30)
-            this.WDev =parseFloat(this.WDev.toFixed(2));
-
+          this.WDev = 50.00 + ((this.HeightFt-5)*12*2.30) + (this.HeightIn*2.30)
+            this.WDev = parseFloat(this.WDev.toFixed(2));
         }
 
       } else if (this.gender == "f") {
@@ -55,22 +55,21 @@ export class ContactPage {
 
         } else{
           
-          this.WRob = 49.00 + (this.CombHeight*1.70);
-            this.WRob =parseFloat(this.WRob.toFixed(2));
+          this.WRob = 49.00 + ((this.HeightFt-5)*12*1.7) + (this.HeightIn*1.7)
+            this.WRob = parseFloat(this.WRob.toFixed(2));
 
-          this.WMil = 53.10 + (this.CombHeight*1.36);
-            this.WMil =parseFloat(this.WMil.toFixed(2));
+          this.WMil = 53.10 + ((this.HeightFt-5)*12*1.36) + (this.HeightIn*1.36)
+            this.WMil = parseFloat(this.WMil.toFixed(2));
 
-          this.WHam = 45.50 + (this.CombHeight*2.20);
-            this.WHam =parseFloat(this.WHam.toFixed(2));
+          this.WHam = 45.50 + ((this.HeightFt-5)*12*2.2) + (this.HeightIn*2.2)
+            this.WHam = parseFloat(this.WHam.toFixed(2));
 
-          this.WDev = 45.50 + (this.CombHeight*2.30);
-            this.WDev =parseFloat(this.WDev.toFixed(2));
-
+          this.WDev = 45.50 + ((this.HeightFt-5)*12*2.3) + (this.HeightIn*2.3)
+            this.WDev = parseFloat(this.WDev.toFixed(2));
         }
 
       }else {
-        this.Fmsg = "Kindly Input Your Gender & Height"
+        this.Fmsg = "Kindly Input Your Gender, Height or Both";
       }
     }
     
