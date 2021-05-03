@@ -3,7 +3,8 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-contact',
-  templateUrl: 'contact.html'
+  templateUrl: 'contact.html',
+  styleUrls: ['contact.css']
 })
 export class ContactPage {
   gender: string;
@@ -68,9 +69,7 @@ export class ContactPage {
             this.WDev = parseFloat(this.WDev.toFixed(2));
         }
 
-      }else {
-        this.Fmsg = "Kindly Input Your Gender, Height or Both";
-      }
+      }else {}
     }
     
 }

@@ -6,7 +6,7 @@
 
 <ion-content padding>
   <h2>Know Your Ideal Weight</h2>
-
+    <br/>
     <ion-item>
       <ion-label color="dark"> Gender: </ion-label>
         <ion-select interface="popover" [(ngModel)]="gender">
@@ -39,15 +39,17 @@
     <br/>
     <br/>
 
+    
     <ion-item *ngIf="WRob">
-      <p> Robinson (1983): {{WRob}} kg </p>
-      <p> Miller   (1983): {{WMil}} kg </p>
-      <p> Hamwi    (1964): {{WHam}} kg </p>
-      <p> Devine   (1974): {{WDev}} kg </p>
-    </ion-item>
-
-    <ion-item *ngIf="Fmsg">
-      <p> {{Fmsg}}</p>
+      <h2> Your Ideal Weight According to the Following </h2>
+        <br/>
+        <p> Robinson (1983): {{WRob}} kg </p>
+        <br/>
+        <p> Miller   (1983): {{WMil}} kg </p>
+        <br/>
+        <p> Hamwi    (1964): {{WHam}} kg </p>
+        <br/>
+        <p> Devine   (1974): {{WDev}} kg </p>
     </ion-item>
 
 </ion-content>
